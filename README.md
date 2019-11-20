@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto com foco em criar uma intranet com integração Mobile.
 
-Things you may want to cover:
+*Criado autenticação com Devise
+*Criado painel administrativo
+*Criado migrations
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Banco de dados Postgresql.
