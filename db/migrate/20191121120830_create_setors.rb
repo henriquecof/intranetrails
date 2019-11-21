@@ -4,7 +4,6 @@ class CreateSetors < ActiveRecord::Migration[6.0]
       t.string :unidade
       t.string :empresa
       t.string :setor
-
       t.timestamps
     end
   end

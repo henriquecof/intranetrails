@@ -1,2 +1,2 @@
-class Setor < ApplicationRecord
+class Setor < ApplicationRecord 
 end
