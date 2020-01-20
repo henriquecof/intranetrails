@@ -65,10 +65,6 @@ gem 'rails_admin_rollincode'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'solargraph'
 
-<<<<<<< HEAD
 gem 'wdm', '>= 0.1.0'
 
 gem 'carrierwave'
-=======
-gem 'rubocop'
->>>>>>> 5fc05ebe8cb729f1abf2a474c52391c9771d173b
