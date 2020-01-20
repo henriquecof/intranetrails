@@ -3,11 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+         enum status: { Ativo: 0 , Inativo: 1 }
 
-         enum status: { 
-           Ativo: 0 , 
-           Inativo: 1 }
-
-
-      
+  mount_uploader :photo, PhotoUploader
 end

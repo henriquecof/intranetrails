@@ -66,3 +66,5 @@ gem "devise"
 gem 'rails_admin_rollincode'
 
 gem 'wdm', '>= 0.1.0'
+
+gem 'carrierwave'
