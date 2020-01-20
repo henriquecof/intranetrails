@@ -10,6 +10,6 @@ class User < ApplicationRecord
 
   mount_uploader :photo, PhotoUploader
 
-  belongs_to :setor
+  
 
 end
