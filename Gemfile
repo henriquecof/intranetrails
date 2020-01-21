@@ -68,3 +68,6 @@ gem 'solargraph'
 gem 'wdm', '>= 0.1.0'
 
 gem 'carrierwave'
+gem 'mini_magick'
+
+gem 'rails-i18n'
