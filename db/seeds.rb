@@ -1,9 +1,3 @@
-=begin
-essa foi a forma que a gem faker populou o banco de dados para a tabela setor
-
-=end
-
-
 10.times do |n|
     #id = rand (1..10)
     unidade = Faker::Name.name
@@ -17,3 +11,4 @@ essa foi a forma que a gem faker populou o banco de dados para a tabela setor
     )
 
 end
+
