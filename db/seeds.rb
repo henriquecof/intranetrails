@@ -1,15 +1,19 @@
-require 'faker'
+=begin
+essa foi a forma que a gem faker populou o banco de dados para a tabela setor
 
-200.times do
-  unidade_setor = Faker::Nane.name
-    empresa_setor = Faker::Name.first_name
-    setor_setor = Faker::Name.last_name
-    id_setor = rand(1..50)
-    Setor.create(id: id_setor,
-        unidade: unidade_setor,
-        empresa: empresa_setor,
-        setor: setor_setor
+=end
+
+
+10.times do |n|
+    #id = rand (1..10)
+    unidade = Faker::Name.name
+    empresa = Faker::Educator.campus
+    setor = Faker::Educator.university
+    Setor.create(
+        #id: id,
+        unidade: unidade,
+        empresa: empresa,
+        setor: setor
     )
-
 
 end
