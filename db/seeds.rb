@@ -1,8 +1,7 @@
-require 'ffaker'
-
-10.times do 
-    Setor.create(
-        empresa: Faker::first_name,
-        unidade: Faker::last_name,
-         )
+5.times do
+    Setor.create!(   
+        unidade: Faker::Company.name,
+        empresa: Faker::Company.sufix,
+        setor: Faker::Name.name
+    )
 end
