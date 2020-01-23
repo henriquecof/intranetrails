@@ -71,3 +71,4 @@ gem 'mini_magick'
 
 gem 'rails-i18n'
 gem 'yard'
+gem 'bootstrap-sass'

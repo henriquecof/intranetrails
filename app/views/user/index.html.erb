@@ -1,0 +1,14 @@
+<html>
+<head>
+         <title>Todos os Usuários</title>
+</head>
+<body>
+         <h1>Usuários</h1> 
+  
+         <ul>
+         <% for users in @users %>
+                   <li> <a href="/users/<%=users.id%>"> <%=users.nome%> </a> </li>
+         <% end %>
+         </ul>
+</body>
+</html>
