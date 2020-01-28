@@ -1,0 +1,3 @@
+class Secao < ApplicationRecord
+ 
+end

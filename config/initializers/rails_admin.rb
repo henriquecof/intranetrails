@@ -1,7 +1,18 @@
 # frozen_string_literal: true
 
 RailsAdmin.config do |config|
+config.navigation_static_links = {
+    ' Google ' => ' http://www.google.com ' 
+ }
+ config.navigation_static_label =  " Meus links "
+
+config.model Secao do
+  navigation_label 'Cadastros'
+end
+
   ### Popular gems integration
+  
+  ##config.main_app_name = Proc.new { |controller| [ "secao - #{controller.params[:action].try(:titleize)}" ] }
 
   ## == Devise ==
   config.authenticate_with do
@@ -38,4 +49,6 @@ RailsAdmin.config do |config|
      #history_index
      #history_show
   end
+
+
 end

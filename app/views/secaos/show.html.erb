@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @secao.id %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @secao.descricao %>
+</p>
+
+<%= link_to 'Edit', edit_secao_path(@secao) %> |
+<%= link_to 'Back', secaos_path %>
