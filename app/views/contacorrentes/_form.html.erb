@@ -1,0 +1,42 @@
+<%= form_with(model: contacorrente, local: true) do |form| %>
+  <% if contacorrente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contacorrente.errors.count, "error") %> prohibited this contacorrente from being saved:</h2>
+
+      <ul>
+        <% contacorrente.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.text_field :tipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :banco %>
+    <%= form.text_field :banco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agencia %>
+    <%= form.text_field :agencia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agente %>
+    <%= form.text_field :agente %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

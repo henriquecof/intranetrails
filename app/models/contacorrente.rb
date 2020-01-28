@@ -1,0 +1,2 @@
+class Contacorrente < ApplicationRecord
+end

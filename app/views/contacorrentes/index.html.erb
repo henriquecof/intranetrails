@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Contacorrentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Descricao</th>
+      <th>Banco</th>
+      <th>Agencia</th>
+      <th>Agente</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacorrentes.each do |contacorrente| %>
+      <tr>
+        <td><%= contacorrente.tipo %></td>
+        <td><%= contacorrente.descricao %></td>
+        <td><%= contacorrente.banco %></td>
+        <td><%= contacorrente.agencia %></td>
+        <td><%= contacorrente.agente %></td>
+        <td><%= link_to 'Show', contacorrente %></td>
+        <td><%= link_to 'Edit', edit_contacorrente_path(contacorrente) %></td>
+        <td><%= link_to 'Destroy', contacorrente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contacorrente', new_contacorrente_path %>

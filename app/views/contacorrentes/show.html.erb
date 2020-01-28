@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @contacorrente.tipo %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @contacorrente.descricao %>
+</p>
+
+<p>
+  <strong>Banco:</strong>
+  <%= @contacorrente.banco %>
+</p>
+
+<p>
+  <strong>Agencia:</strong>
+  <%= @contacorrente.agencia %>
+</p>
+
+<p>
+  <strong>Agente:</strong>
+  <%= @contacorrente.agente %>
+</p>
+
+<%= link_to 'Edit', edit_contacorrente_path(@contacorrente) %> |
+<%= link_to 'Back', contacorrentes_path %>

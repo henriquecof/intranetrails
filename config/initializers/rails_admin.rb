@@ -6,13 +6,39 @@ config.navigation_static_links = {
  }
  config.navigation_static_label =  " Meus links "
 
-config.model Secao do
+
+
+
+
+
+config.model "#{Secao}" do
   navigation_label 'Cadastros'
 end
 
+
+
+config.model "#{User}" do
+  navigation_label 'Cadastros'
+end
+
+
+config.model "#{Setor}" do
+  navigation_label 'Cadastros'
+end
+
+  config.main_app_name = Proc.new { |controller| [ "Backoffice" ] }
+
+
+
+  config.model "#{Contacorrente}" do
+    navigation_label 'Financeiro'
+  end
+  config.model "#{Agente}" do
+    navigation_label 'Financeiro'
+  end
+
+
   ### Popular gems integration
-  
-  ##config.main_app_name = Proc.new { |controller| [ "secao - #{controller.params[:action].try(:titleize)}" ] }
 
   ## == Devise ==
   config.authenticate_with do
