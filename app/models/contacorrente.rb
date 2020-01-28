@@ -3,7 +3,8 @@ class Contacorrente < ApplicationRecord
     enum banco: {
         "Banco do Brasil"=>  001,
         "Caixa Econômica" => 104,
-        "Banco Santander" => 033
+        "Banco Santander" => 033,
+        "Banco Itaú" => 341
     
     
     }
