@@ -7,20 +7,13 @@ config.navigation_static_links = {
  config.navigation_static_label =  " Meus links "
 
 
-
-
-
-
 config.model "#{Secao}" do
   navigation_label 'Cadastros'
 end
 
-
-
 config.model "#{User}" do
   navigation_label 'Cadastros'
 end
-
 
 config.model "#{Setor}" do
   navigation_label 'Cadastros'
@@ -33,10 +26,10 @@ end
   config.model "#{Contacorrente}" do
     navigation_label 'Financeiro'
   end
+
   config.model "#{Agente}" do
     navigation_label 'Financeiro'
   end
-
 
   ### Popular gems integration
 

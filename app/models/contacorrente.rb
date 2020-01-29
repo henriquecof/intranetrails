@@ -8,4 +8,6 @@ class Contacorrente < ApplicationRecord
     
     
     }
+
+    belongs_to :agente
 end
